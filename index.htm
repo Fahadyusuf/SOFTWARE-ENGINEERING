@@ -1,0 +1,193 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<title>Online Auction</title>
+			<meta charset="utf-8"/>
+			<link rel="stylesheet" href="./css/reset.css" />
+			<link rel="stylesheet" href="./css/style.css" />
+			<script>
+				function banner1(){
+					document.querySelector('.Dell_Inspiron').style.display = 'none'
+					document.querySelector('.IBM_thnikpad').style.display = 'none'
+					document.querySelector('.Lenovo').style.display = 'none'
+					document.querySelector('.hp_probook').style.display = 'block'
+0				}
+				function banner2(){
+					document.querySelector('.hp_probook').style.display = 'none'
+					document.querySelector('.IBM_thnikpad').style.display = 'none'
+					document.querySelector('.Lenovo').style.display = 'none'
+					document.querySelector('.Dell_Inspiron').style.display = 'block'
+				}
+				function banner3(){
+					document.querySelector('.hp_probook').style.display = 'none'
+					document.querySelector('.Dell_Inspiron').style.display = 'none'
+					document.querySelector('.Lenovo').style.display = 'none'
+					document.querySelector('.IBM_thnikpad').style.display = 'block'
+				}
+				function banner4(){
+					document.querySelector('.hp_probook').style.display = 'none'
+					document.querySelector('.Dell_Inspiron').style.display = 'none'
+					document.querySelector('.IBM_thnikpad').style.display = 'none'
+					document.querySelector('.Lenovo').style.display = 'block'
+				}
+				
+			</script>
+		</head>
+		<body>
+		<div class="user_bar">
+				<div>
+					<div>
+						<label for="input_login">login</label>
+					</div>
+					<input type="text" placeholder="Email" id="input_login" />
+					<input type="text" placeholder="Password" id="input_login" />
+					<button>login</button>
+					<input type="checkbox" id="remember-me" />
+					<label for="remember-me">Keep me Logged In</label>
+					<a href="#">Forgotten your password?</a>
+					<a href="#">Register Here</a>
+				</div>
+			</div>
+		<div class="maincontainer">
+			<header class="page_header">
+				<h1>Online Auction</h1>
+				<nav>
+					<ul>
+						<li><a href="index.htm" class="selected">Home</a></li>
+						<li><a href="laptop.htm">Category</a>
+							<ul>
+								<li>Electronics</li>
+								<li>Home Appliance</li>
+								<li>Vehicles</li>
+								<li>Property</li>
+								<li>Clothing</li>
+							</ul>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="join.htm">Join Us</a></li>
+					</ul>
+					<div class="clear"></div>
+				</nav>
+			</header>
+			<!--header End-->			
+			<section class="banner">
+				<div class="hp_probook">
+					<h1 dir="rtl">HP Probook <span>4445S</span></h1>
+					<ul dir="rtl">
+						<li>Processor APU Dual Core A6</li>
+						<li>Expandable Memory Up to 8 GB</li>
+						<li>Memory Slots 2 (Unused Slot-0) nd</li>
+						<li>System Memory 4 GB</li>
+						<li>Hardware Interface SATA</li>
+					</ul>
+					<a href="#">Start Your bid</a>
+				</div>
+				<div class="Dell_Inspiron">
+					<h1 dir="rtl">Dell Inspiron <span>3521</span></h1>
+					<ul dir="rtl">
+						<li>Intel core i3 1.5GHZ</li>
+						<li>Hard Drive 500GB Sata 5400 rpm</li>
+						<li>Memory Slots 2 (Unused Slot-0) nd</li>
+						<li>System Memory 2 GB DDR 3</li>
+						<li>Intel HD Graphic</li>
+					</ul>
+					<a href="#">Start Your bid</a>
+				</div>
+				<div class="IBM_thnikpad">
+					<h1 dir="rtl">IBM Think Pad<span>x41</span></h1>
+					<ul dir="rtl">
+						<li>Intel Pentium M LV 758 </li>
+						<li>Screen : 12.1" TFT XGA</li>
+						<li>Slots : 1 PCMCIA card slot, 1 Secure Digital card slot</li>
+						<li>Ram : 256MB or 512MB PC-4200 DDR-2 SDRAM</li>
+						<li>Battery backup 2.5 hr</li>
+					</ul>
+					<a href="#">Start Your bid</a>
+				</div>
+				<div class="Lenovo">
+					<h1 dir="rtl">Lenovo <span>G580</span></h1>
+					<ul dir="rtl">
+						<li>Intel Core i3-2328M </li>
+						<li>Memory :6GB DDR 3</li>
+						<li>Graphics Processor : Intel HD Graphics 3000</li>
+						<li>Operating system : Windows 8</li>
+						<li>Viewable size : 15.6 in</li>
+					</ul>
+					<a href="#">Shop Now!</a>
+				</div>
+				
+				<div onclick="banner1()">Electrnoics</div>
+				<div onclick="banner2()">Vehicles</div>
+				<div onclick="banner3()">Property</div>
+				<div onclick="banner4()">Clothing</div>
+				<div class="clear"></div>
+			</section>
+			<!--Content End-->
+			
+			<section class="cebit">
+				<header>
+					<h1>CeBIT <span>2013</span></h1>
+				</header>
+                <a href="#"><img src="./images/cebit.jpg" alt="Cebit"/></a>
+				<article>
+					<p>
+						<span class="para"><span>After a very successful 2012</span> show we are organising and booking stands for CeBIT 2013 already!
+						Many of these key stands have been reserved, but if you would like a stand contact us to discuss availability and positions.</span>     
+						If you wish to book your company stand - contact us today.             
+    				</p>
+				</article>
+				<footer>
+					<p>Join the ICB Trade area &copy; CeBIT 2013</p>
+				</footer>
+			</section>
+			
+			<!--two-->
+			
+			<section  class="itc">
+				<header>
+					<h1>ITC <span>2013 - 13 - 15 June</span></h1>
+				</header>
+                <a href="#"><img src="./images/itc.jpg" alt="ITC" ></a>
+				<article>
+					<p>
+						<span>ITC is the unique networking event for the trading industry, with hundreds of traders & resellers attending each year.</span>
+						<span>ITC gives you the opportunity to meet both new and existing customers / suppliers in one place.</span>
+						ITC is open to all companies trading Consumer electronics, Mobile Phones or IT components.
+					</p>
+				</article>
+				<footer>
+					<p>Register now and book your place!</p>
+				</footer>
+			</section>
+			
+			<!--tree-->
+			
+			<section  class="book">
+				<header>
+					<h1>Book <span>Banner Adverts</span></h1>
+				</header>
+                 <a href="#"><img src="./images/book.jpg" alt="BookBanner" /></a>
+				<article>
+					<p>
+						<span>If your company wishes to place their adverts on any page please contact our sales team to discuss availability.</span>
+						The banner adverts are very popular and usually require advance scheduling.
+					</p>
+				</article>
+				<footer><a href="#">Book Now</a></footer>
+			</section>
+            <div class="clear"></div>
+			<!--Footer Start-->
+			<footer class="page_footer">
+				<p>&copy; Mustafa's Co. 2013</p>
+				<nav>
+					<ul>
+						<li><a href="index.htm">Home</a></li>
+						<li><a href="laptop.htm">laptops</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="join.htm">Join Us</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</div>
+		</body>
+	</html>

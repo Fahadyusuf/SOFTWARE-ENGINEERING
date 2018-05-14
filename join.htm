@@ -1,0 +1,168 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<title>MustafaCo.</title>
+			<meta charset="utf-8"/>
+			<link rel="stylesheet" href="./css/reset.css" />
+			<link rel="stylesheet" href="./css/style.css" />
+			<script>
+				function man(){
+					document.querySelector('.alertPassword').style.display = "block";
+				}
+				function man2(){
+					document.querySelector('.alertPassword').style.display = "none";
+				}
+				function focus1(that){
+					document.querySelector('#username').value = "";
+				}
+				function blur1(that){
+					document.querySelector('#username').value = "First Name";
+				}
+			</script>
+		</head>
+		<body>
+		<div class="user_bar">
+				<div>
+					<div>
+						<label for="input_login">login</label>
+					</div>
+					<input type="text" placeholder="Email" id="input_login" />
+					<input type="text" placeholder="Password" id="input_login" />
+					<button>login</button>
+					<label class="remember" for="remember-me">
+						<input type="checkbox" id="remember-me" />Keep me Logged In
+					</label>
+					<a href="#">Forgotten your password?</a>
+					<a href="#">Register Here</a>
+				</div>
+			</div>
+		<div class="maincontainer">
+			<header class="page_header">
+				<h1>Mustafa's Computer Co.</h1>
+				<nav>
+					<ul>
+						<li><a href="index.htm">Home</a></li>
+						<li><a href="laptop.htm">Laptops</a>
+							<ul>
+								<li>Hp Pavillion g6</li>
+								<li>Lenovo x41</li>
+								<li>Acer 3600</li>
+								<li>Dell Latitude</li>
+								<li>IBM R300</li>
+							</ul>
+						</li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="join.htm"  class="selected">Join Us</a></li>
+					</ul>
+					<div class="clear"></div>
+				</nav>
+			</header>
+			<!--header End-->			
+			
+			<div class="join_form">
+				<form>
+					<label for="username">First name
+						<input type="text" id="username" value="First name" onclick="focus1(this)" onblur="blur1()"/>
+					</label>
+					<label for="username2">Last name
+						<input type="text" id="username2" placeholder="Last name"/>
+					</label>
+					<label for="email">Email
+						<input type="text" id="email" placeholder="Email"/>
+					</label>
+					<label for="word">Password
+						<input  onfocus="man()" onblur="man2()"  type="password" id="word" placeholder="Password"/>
+						<div class="alertPassword">
+							<p>Must be in 8 Characters</p>
+							<div class="triangle"></div>
+						</div>
+					</label>
+					<label for="Conpassword">Confirm
+						<input type="password" id="Conpassword" placeholder="Confirm Password"/>
+					</label>
+				<select id="cityPak">
+					<option selected="selected">Birth</option>
+					<option>1996</option>
+					<option>1995</option>
+					<option>1994</option>
+					<option>1993</option>
+					<option>1992</option>
+					<option>1991</option>
+					<option>1990</option>
+					<option>1989</option>
+					<option>1988</option>
+					<option>1987</option>
+				</select>
+					<label for="sex_m">
+					<input type="radio" name="sex" id="sex_m" value="male">Male
+					</label>
+					<label for="sex_f">
+					<input type="radio" name="sex" id="sex_f" value="female">Female
+					</label>
+				<select onclick="country()">
+					<option selected="selected">Country</option>
+					<option id="pak">Pakistan</option>
+					<option>USA</option>
+					<option>UK</option>
+					<option>Africa</option>
+					<option>India</option>
+					<option>Chine</option>
+					<option>Japan</option>
+					<option>SriLanka</option>
+					<option>Russia</option>
+					<option>Israel</option>
+				</select>
+				<select id="cityPak">
+					<option selected="selected">City \ State</option>
+					<option>Karachi</option>
+					<option>Islamabad</option>
+					<option>Lahore</option>
+				</select>
+				
+				<label for="Policy">
+					<input type="checkbox" id="Policy" value="policy">Accept This Term &amp; Privacy Policy
+				</label>
+				<div><a href="#">Submit it</a></div>
+				</form>
+				
+				<section dir="rtl">
+					<header>
+						<h1>Terms &amp; Policy</h1>
+					</header>
+					<article>
+						<h1>Terms of Use</h1>
+						<p>By accessing (which includes browsing and any use, by the employment of any device or by any means), www.independent.co.uk or its associated websites (all of which sites are known collectively and/or individually in these Terms as the &ldquo;Website&rdquo; you are agreeing to be legally bound by these terms as modified from time to time (&rdquo;Terms&rdquo;).<br />
+						Before using the Website it is your responsibility to read the Privacy Policy and to notify us in the manner set out in the Policy if you do not want us to collect information about you, and to reject any cookies in the manner set out therein.</p>
+						<h1>Use of Website</h1>
+						<p>The Website is owned and operated by Independent Digital News and Media Limited. IDNM reserves the right to suspend or terminate your access to the Website at any time, with or without notice or explanation.</p>
+						<h1>Rights</h1>
+						<p>All intellectual property rights, including copyright, in the content accessible (or available for download) on the Website, including text, pictures, graphics, video, audio material, software or any other form (&rdquo; Content&rdquo;) belong to IDNM or its licensors. All rights are hereby reserved.</p>
+						<h1>Use of Content</h1>
+						<p>The Website and the Content may only be used for your personal, non-commercial use.<br /><br />
+						For this purpose alone you may retrieve and display the Content on a computer screen. You may also print out, but not photocopy, one copy of individual files on paper and store files in electronic form on disc, but not on any server or any other storage device connected to a network where the Content could be accessed by other users.<br />
+						Except as set out above, you agree not to download, copy, reproduce, modify, store, archive, show in public, redistribute or commercially exploit in any way any part of the Content without the prior written permission of IDNM. You agree not to use the Content or the Website for any illegal or improper purpose, nor for any purpose which might infringe the rights of others, or which might harass or cause inconvenience of distress to any person.
+						You also agree to abide by all copyright notices and restrictions attached to the Content and not to remove any such notice or restriction, or alter the Content in any way.
+						Aggregation: If you are a paid for web aggregator you require a licence to redistribute the content of this site. Licences can be obtained through the Newspaper Licensing Agency (www.nla.co.uk). Users of paid for aggregation services and organisations systematically distributing web content internally should also contact NLA to discuss licence requirements.</p>
+					</article>
+				</section>
+				<div class="img">
+					<img src="./images/Ribbon.gif" alt="" />
+				</div>
+			</div>
+			<div class="clear"></div>
+           
+			<!--Footer Start-->
+			<footer class="page_footer">
+				<p>&copy; Mustafa's Co. 2013</p>
+				<nav>
+					<ul>
+						<li><a href="index.htm">Home</a></li>
+						<li><a href="laptop.htm">laptops</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="join.htm">Join Us</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</div>
+		</body>
+	</html>
